@@ -6,7 +6,11 @@ const ShoppingCartPage = () => {
 
     const {getAddedToCart} = useContext(mainContext)
 
-    // let total += getAddedToCart[index].quantity * Number(getAddedToCart[index].price)
+   function countPrice() {
+        let price = 0
+       getAddedToCart.map(x => price += x.quantity * x.price)
+       return price
+   }
 
     return (
         <div>
@@ -15,7 +19,7 @@ const ShoppingCartPage = () => {
             </div>
             <div className="d-flex space-btw">
                 <div/>
-                <h1>Total Price: {}</h1>
+                <h1>Total Price: {countPrice()}</h1>
             </div>
         </div>
     );
