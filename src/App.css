@@ -1,0 +1,104 @@
+App {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+.card {
+  background-color: coral;
+  margin: 5px;
+  padding: 5px;
+}
+.column {
+  flex-direction: column;
+}
+.grow1 {
+  flex: 1;
+}
+.align-center {
+  align-items: center;
+}
+input {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.j-center {
+  justify-content: center;
+}
+.align-center {
+  text-align: center;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  margin: 10px;
+  height: 25px;
+}
+
+.commentInput {
+  height: 100px;
+  width: 200px;
+  margin: 5px;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.s-around {
+  justify-content: space-around;
+}
+
+.grow1 {
+  flex: 1;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+
+.form {
+  width: 300px;
+}
+
+.cart-item {
+  margin: 5px;
+  border: 1px solid gray;
+}
+.cart-item img {
+  width: 150px;
+  height: 100%;
+}
+
