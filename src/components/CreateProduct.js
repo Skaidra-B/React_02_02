@@ -18,6 +18,7 @@ const CreateProduct = () => {
         if(titleRef.current.value.length > 0 && descriptionRef.current.value.length > 0 && photoRef.current.value.length > 0 && priceRef.current.value.length >0) {
             const product = {
                 title: titleRef.current.value,
+                url: titleRef.current.value.replace(/ /g, "-"),
                 description: descriptionRef.current.value,
                 photo: photoRef.current.value,
                 price: priceRef.current.value,

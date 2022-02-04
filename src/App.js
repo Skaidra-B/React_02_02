@@ -25,7 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<CreateProductPage/>}/>
             <Route path="/allproducts" element={<AllProductsPage/>}/>
-            <Route path="/product/:title" element={<SingleProductPage/>}/>
+            <Route path="/product/:url" element={<SingleProductPage/>}/>
             <Route path="/cart" element={<ShoppingCartPage/>}/>
           </Routes>
         </BrowserRouter>

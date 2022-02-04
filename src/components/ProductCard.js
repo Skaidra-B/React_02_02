@@ -8,13 +8,19 @@ const ProductCard = ({item}) => {
     const {setSelected, getAddedToCart, setAddedToCart} = useContext(mainContext)
 
     function goToProduct() {
-        nav("/product/"+ item.title)
+        nav("/product/"+ item.url)
         setSelected(item)
         console.log(item)
     }
 
     function addToCart() {
-        setAddedToCart([...getAddedToCart, item])
+
+        const prod = getAddedToCart.find(x => x.url === item.url)
+        if (prod) {
+
+        } else {
+            setAddedToCart([...getAddedToCart, item])
+        }
     }
 
     return (

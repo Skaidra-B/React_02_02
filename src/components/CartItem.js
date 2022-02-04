@@ -7,9 +7,10 @@ const CartItem = ({item, index}) => {
     const {getAddedToCart, setAddedToCart} = useContext(mainContext)
 
     function removeItem() {
-        if(item.quantity === 1) {
+        if(getAddedToCart[index].quantity === 1) {
             const result = getAddedToCart.filter((x, i) => i !== index)
-            setAddedToCart(result)
+            setAddedToCart([...result])
+
 
         } else {
             getAddedToCart[index].quantity --
